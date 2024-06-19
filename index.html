@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header class="bg-cyan-600 hover:bg-cyan-500 mb-7 font-bold text-xl text-white text-center p-5">
+    <h1>Bookself Apps by Amri Nurfalah</h1>
+</header>
+
+<body>
+    <div class="max-w-lg my-10 border border-slate-300 rounded-xl mx-auto p-5 shadow-md hover:bg-slate-50 group mt-20">
+        <h5 class="text-center text-bold text-pink-500 font-bold">Masukkan Buku Baru</h5>
+
+        <section class="input">
+            <form class="form" action="#" id="form">
+                <div>
+                    <label for="inputJudul">
+                        <span class="block font-semibold mb-3 mx-1 text-pink-600">Judul</span>
+                        <input type="text" id="inputJudul" placeholder="masukkan judul buku" class="px-5 py-3 rounded border shadow w-full text-sm focus:outline-none focus:ring-1 focus:ring-pink-400 focus:border-pink-400">
+                    </label>
+                </div>
+                <div>
+                    <label for="inputTahun">
+                        <span class="block font-semibold mb-3 mx-1 text-pink-600 mt-4">Tahun</span>
+                        <input type="text" id="inputTahun" placeholder="masukkan Tahun penulis" class="px-5 py-3 rounded border shadow w-full text-sm">
+                    </label>
+                </div>
+                <div>
+                    <label for="inputPenulis">
+                        <span class="block font-semibold mb-3 mx-1 text-pink-600 mt-4">Penulis</span>
+                        <input type="text" id="inputPenulis" placeholder="masukkan Penulis buku" class="px-5 py-3 rounded border shadow w-full text-sm">
+                    </label>
+                </div>
+            <div class="flex items-center mt-5">
+                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded">
+                <label for="default-checkbox" class="text-pink-500 font-semibold ml-1">sudah dibaca</label>
+            </div>
+    
+            <button class="p-2 m-2 rounded-md text-white font-medium block mx-auto mt-5  hover:bg-pink-300 bg-pink-500" id="formSubmit" type="submit">submit</button>
+            </form>
+        </section>
+
+    </div>
+
+    <section class="max-w-lg my-10 border border-slate-300 rounded-xl mx-auto p-5 shadow-md hover:bg-slate-100" id="append_book">
+        <div class="container">
+            <div class="max-w-lg my-10 border border-slate-300 rounded-xl mx-auto p-5 shadow-md hover:bg-slate-100 group">
+                <h5 class="container-header text-center text-bold text-pink-500 font-bold">Buku Sudah Selesai Dibaca</h5>
+            </div>
+            <div class="text-pink-400 rounded-md">
+                <div class="" id="completed_lib"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-lg my-10 border border-slate-300 rounded-xl mx-auto p-5 shadow-md hover:bg-slate-100" id="append_book">
+        <div class="container">
+            <div class="max-w-lg my-10 border border-slate-300 rounded-xl mx-auto p-5 shadow-md hover:bg-slate-100 group">
+                <h5 class="container-header text-center text-bold text-pink-500 font-bold">Buku belum Selesai Dibaca</h5>
+            </div>
+            <div class=" text-pink-400 rounded-md">    
+                <div class=" mx-auto" id="uncompleted_lib"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-lg bg-violet-400 text-white card text-center mx-auto">Form Edit Buku 
+    </div>
+
+    <section class="input max-w-lg my-10 border border-slate-300 rounded-xl mx-auto p-5 shadow-md hover:bg-slate-50 group mt-20">
+        <form class="form " action="#" id="editForm" style="display:none;">
+            <div>
+                <label for="editJudul">
+                    <span class="block font-semibold mb-3 mx-1 text-pink-600">Judul</span>
+                    <input type="text" id="editJudul" placeholder="masukkan judul buku" class="px-5 py-3 rounded border shadow w-full text-sm focus:outline-none focus:ring-1 focus:ring-pink-400 focus:border-pink-400">
+                </label>
+            </div>
+            <div>
+                <label for="editTahun">
+                    <span class="block font-semibold mb-3 mx-1 text-pink-600 mt-4">Tahun</span>
+                    <input type="text" id="editTahun" placeholder="masukkan Tahun penulis" class="px-5 py-3 rounded border shadow w-full text-sm">
+                </label>
+            </div>
+            <div>
+                <label for="editPenulis">
+                    <span class="block font-semibold mb-3 mx-1 text-pink-600 mt-4">Penulis</span>
+                    <input type="text" id="editPenulis" placeholder="masukkan Penulis buku" class="px-5 py-3 rounded border shadow w-full text-sm">
+                </label>
+            </div>
+            <div class="flex items-center mt-5">
+                <input id="edit-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded">
+                <label for="edit-checkbox" class="text-pink-500 font-semibold ml-1">sudah dibaca</label>
+            </div>
+    
+            <button class="p-2 m-2 rounded-md text-white font-medium block mx-auto mt-5  hover:bg-pink-300 bg-pink-500" id="editSubmit" type="submit">submit</button>
+        </form>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
