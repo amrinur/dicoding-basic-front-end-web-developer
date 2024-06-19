@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card{
+        @apply bg-slate-200 mb-4 rounded-md p-4;
+    }
+
+    .margin_element{
+        @apply mb-2;
+    }
+
+    .remove_button {
+        @apply bg-red-400 p-2 m-2 rounded-md text-white font-medium;
+    }
+
+    .toggle_button {
+        @apply bg-green-600 p-2 m-2 rounded-md text-white font-medium;
+    }
+    
+
+
+
+}
